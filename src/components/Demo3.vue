@@ -1,8 +1,7 @@
 <template>
-  我是Demo2组件
+  我是Demo3组件
   <button @click="handleClick">Click</button>
 </template>
-
 <script>
 import { subtract } from '@/assets/utils/index.js';
 export default {

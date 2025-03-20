@@ -1,13 +1,15 @@
 <template>
-  <img :src="smallImg" alt="小于10kb的图片" />
-  <img :src="bigImg" alt="大于于10kb的图片" />
-  <!-- 小图片背景容器 -->
-  <div className='smallImg'></div>
+  <!-- <img :src="smallImg" alt="小于10kb的图片" />
+  <img :src="bigImg" alt="大于于10kb的图片" /> -->
+  小图片背景容器
+  <!-- <div className='smallImg'></div> -->
   <!-- 大图片背景容器 -->
-  <div className='bigImg'></div>
+  <!-- <div className='bigImg'></div> -->
   <div> 修改App.vue</div>
   <!-- 使用Demo1组件 -->
-  <Demo1 />
+  <Demo1 class="test-ak" />
+  <Demo2 />
+  <Demo3 />
 </template>
 
 <script setup lang="ts">
@@ -15,9 +17,15 @@
   import bigImg from './assets/imgs/22kb.png'
   import './app.css'
   import './app.less'
-  import { Demo1, Demo2 } from '@/components' //引入Demo1和Demo2组件
+  import { Demo1, Demo2, Demo3 } from '@/components' //引入Demo1和Demo2组件
+  console.log('哈哈哈哈哈哈哈');
 </script>
 
 <style scoped>
+.test-ak { 
+  font-size: 12px;
+  content: '哈哈哈';
+  color: 'red';
+}
 </style>
 
